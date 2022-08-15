@@ -44,6 +44,7 @@ beforeEach(async () => {
   resolver = module.get<DonateService>(DonateService);
 });
 
+//test code
 // PART 1 - START
 
 //getItemPicDirec(itemID : string)
