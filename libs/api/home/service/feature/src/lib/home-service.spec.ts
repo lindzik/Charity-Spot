@@ -29,6 +29,7 @@ describe ( 'Home Service', () => {
     expect(service).toBeDefined();
   });
                    
+  //gets all the orgs
 /*describe('getAllOrg()', () => {
     it('Succesffuly retrieved all organisations', async () => {
         expect( await service.getAllOrg() ).toMatchObject(te);
