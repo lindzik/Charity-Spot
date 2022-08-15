@@ -4,10 +4,15 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
+    "start:client": "yarn start client",
+    "start:api": "yarn start api",
+    "start:db": "docker compose up -d",
+    "prisma:studio": "yarn prisma studio",
+    "prisma:generate": "yarn prisma generate",
+    "prisma:migrate:dev": "yarn prisma migrate dev",
     "build": "nx build",
     "lint": "nx lint",
-    "test": "nx test",
-    "test-client": "nx e2e client-e2e --watch"
+    "test": "nx test"
   },
   "private": true,
   "dependencies": {
