@@ -20,7 +20,6 @@ on:
         - all
 
 jobs:
-
   test-affected-lint:
       if: ${{ github.event.inputs.testchoice == 'lint' || github.event.inputs.testchoice == 'full' || github.event.inputs.testchoice == ''}}
       uses: ./.github/workflows/nxtest.yml
