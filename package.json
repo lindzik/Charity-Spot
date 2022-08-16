@@ -11,8 +11,8 @@
     "prisma:generate": "yarn prisma generate",
     "prisma:migrate:dev": "yarn prisma migrate dev",
     "build": "nx build",
-    "lint": "nx lint",
-    "test": "nx test"
+    "test": "nx test api-chat-service-feature --skip-nx-cache && nx test api-donate-service-feature --skip-nx-cache && nx test api-item-request-service-feature --skip-nx-cache && nx test api-organisation-profile-service-feature --skip-nx-cache && nx test api-registration-service-feature --skip-nx-cache && nx test api-schedule-delivery-service-feature --skip-nx-cache",
+    "test-client": "nx e2e client-e2e --watch"
   },
   "private": true,
   "dependencies": {
